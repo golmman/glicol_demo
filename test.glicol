@@ -1,4 +1,4 @@
-~t1: speed 4.0 >> seq 60 >> sp \808bdBD0000
+~t1: speed 4.0 >> seq 60 >> sp \bdBT0A0D0
 
 ~t2: seq 33_33_ _33 33__33 _33
 >> sawsynth 0.01 0.1
@@ -9,9 +9,9 @@
  ~a: choose 60 72 0 0
 
  ~t4: speed 4.0 >> seq 60 61 61 63
- >> sp \808CH >> mul 0.7
+ >> sp \hh27000_hh27closedhh >> mul 0.7
 
- ~t5: seq 60 _67 _60 _67 >> sp \808CP
+ ~t5: seq 60 _67 _60 _67 >> sp \cpHANDCLP0
  >> mul 0.7
 
 out: mix ~t.. >> plate 0.1

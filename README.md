@@ -44,12 +44,14 @@ Edit `test.glicol` in your favourite editor and changes are picked up in real-ti
 
 `glicol-cli` builds sample names from the Dirt-Samples directory structure using the pattern `\{folder}{filestem}`. For example:
 
-| File on disk              | Sample name in Glicol |
-|---------------------------|-----------------------|
-| `samples/808bd/BD0000.WAV` | `\808bdBD0000`      |
-| `samples/808/CH.WAV`       | `\808CH`            |
-| `samples/808/CP.WAV`       | `\808CP`            |
-| `samples/sid/000_bas2.wav` | `\sid000_bas2`      |
+| File on disk               | Sample name in Glicol |
+|----------------------------|-----------------------|
+| `samples/bd/BT0A0D0.wav`  | `\bdBT0A0D0`         |
+| `samples/cp/HANDCLP0.wav` | `\cpHANDCLP0`        |
+| `samples/hh27/hh27closedhh.wav` | `\hh27000_hh27closedhh` |
+| `samples/sid/000_bas2.wav` | `\sid000_bas2`       |
+
+**Note:** `glicol-cli` only loads files with lowercase extensions (`.wav`, `.mp3`, `.ogg`). Some Dirt-Samples directories (e.g. `808/`, `808bd/`) use uppercase `.WAV` and are therefore skipped. The demo uses samples from directories that have lowercase extensions.
 
 When glicol-cli starts it prints every sample it loads together with its name, so you can check the full list in the console output.
 
